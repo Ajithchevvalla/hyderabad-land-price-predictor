@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyderabad Land Price Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 Hyderabad Land Price Prediction</h1>
+    <p>Predict land price based on real-world factors</p>
+
+    <label>Location</label>
+    <select id="location">
+      <option value="20000">Hitech City</option>
+      <option value="18000">Gachibowli</option>
+      <option value="16000">Madhapur</option>
+      <option value="14000">Kondapur</option>
+      <option value="12000">Kukatpally</option>
+      <option value="9000">Uppal</option>
+    </select>
+
+    <label>Land Area (sqft)</label>
+    <input type="number" id="area" placeholder="e.g. 2000">
+
+    <label>Distance to Main Road (meters)</label>
+    <input type="number" id="roadDistance" placeholder="e.g. 50">
+
+    <label>Road Width (feet)</label>
+    <input type="number" id="roadWidth" placeholder="e.g. 40">
+
+    <label>Distance to IT Hub (km)</label>
+    <input type="number" id="itDistance" placeholder="e.g. 3">
+
+    <label>Nearby Facilities Score (1–10)</label>
+    <input type="number" id="facilities" min="1" max="10" placeholder="e.g. 7">
+
+    <button onclick="predictPrice()">Predict Price</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
